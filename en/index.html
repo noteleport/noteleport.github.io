@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NoTeleport: so that navigation does not “teleport” you during an air-raid alert</title>
+  <meta name="description" content="An Android app for people who live in Ukraine. During an air-raid alert the GPS signal gets spoofed and navigation shows you in another city. NoTeleport notices the spoofing and keeps it from breaking navigation.">
+  <meta property="og:title" content="NoTeleport: so that navigation does not “teleport” you during an air-raid alert">
+  <meta property="og:description" content="An Android app for people who live in Ukraine. During an air-raid alert the GPS signal gets spoofed and navigation shows you in another city. NoTeleport notices the spoofing and keeps it from breaking navigation.">
+  <meta property="og:image" content="https://noteleport.github.io/icon.png">
+  <meta property="og:url" content="https://noteleport.github.io/en/">
+  <link rel="alternate" hreflang="uk" href="https://noteleport.github.io/">
+  <link rel="alternate" hreflang="en" href="https://noteleport.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://noteleport.github.io/">
+  <link rel="icon" href="../icon.png">
+  <link rel="stylesheet" href="../style.css?v=c97f074e">
+</head>
+<body>
+<main>
+  <header>
+    <a class="brand" href="../en/"><img src="../icon.png" alt=""><span>NoTeleport</span></a>
+    <div class="lang">
+      <a href="../" lang="uk" hreflang="uk"><span class="long">Українська</span><span class="short">Укр</span></a>
+      <a href="../en/" lang="en" hreflang="en" aria-current="true"><span class="long">English</span><span class="short">Eng</span></a>
+    </div>
+  </header>
+  <nav>
+    <a href="../en/" aria-current="page">About the app</a>
+    <a href="../en/setup/">How to set up</a>
+    <a href="../en/privacy/">Privacy policy</a>
+  </nav>
+
+  <section>
+    <h1>So that navigation does not “teleport” you during an air-raid alert</h1>
+    <p class="lead">NoTeleport is an Android app for people who live in Ukraine. It keeps navigation working during air-raid alerts, when the GPS signal gets spoofed.</p>
+
+    <p class="store"><a href="https://play.google.com/store/apps/details?id=io.github.noteleport.app"><img src="../img/google-play-en.png" width="564" height="168" alt="Get it on Google Play"></a></p>
+    <p class="muted">The app is still being prepared for release: the button will work as soon as it is on Google Play.</p>
+
+    <ul class="promises">
+      <li><strong>Sends nothing anywhere.</strong> The app has no internet access at all.</li>
+      <li><strong>Collects nothing about you.</strong> Your location is processed on your phone only.</li>
+      <li><strong>No ads, no analytics.</strong> The app has no advertising or third-party modules that learn anything about you.</li>
+      <li><strong>No sign-up.</strong> No account and no phone number are needed.</li>
+    </ul>
+    <p class="muted">More about this in the <a href="../en/privacy/">privacy policy</a>.</p>
+
+    <h2>The problem it answers</h2>
+    <p>During an air-raid alert the GPS signal is often spoofed. A navigation app suddenly shows you in another city or even another country, hundreds of kilometres from where you are. The route is gone, and navigation is unusable until the spoofing ends.</p>
+
+    <h2>What NoTeleport does</h2>
+    <ol>
+      <li>Checks the GPS signal on the phone.</li>
+      <li>As soon as it notices spoofing, switches GPS off, for all apps at once.</li>
+      <li>The phone goes on working out where you are from Wi-Fi and mobile networks. That is less precise than GPS, but navigation shows you where you really are.</li>
+      <li>When the spoofing ends, NoTeleport switches GPS back on by itself.</li>
+    </ol>
+    <p>While there is no spoofing the app changes nothing on the phone, so it can stay on all the time.</p>
+
+    <div class="shots">
+      <figure>
+        <img src="../img/en/hero-ok.jpg" width="540" height="690" loading="lazy" alt="The NoTeleport screen: “No GPS spoofing. The signal is genuine.”">
+        <figcaption>Normally: no spoofing, the app only checks the signal.</figcaption>
+      </figure>
+      <figure>
+        <img src="../img/en/hero-spoofing.jpg" width="540" height="690" loading="lazy" alt="The NoTeleport screen: “GPS is being spoofed. GPS is off. Location is approximate.”">
+        <figcaption>During spoofing: GPS is off, the location is approximate.</figcaption>
+      </figure>
+    </div>
+
+    <h2>Good to know beforehand</h2>
+    <ul>
+      <li><strong>It does not bring GPS precision back.</strong> While GPS is off the location is approximate: usually to within a few dozen metres in town, worse outside it. But nothing “teleports” you to another city.</li>
+      <li><strong>The first seconds of spoofing.</strong> At the very start of spoofing, navigation may show the fake place for a few seconds: that is how long it takes to recognise it. Then it comes back.</li>
+      <li><strong>Made for Ukraine.</strong> It recognises spoofing by two signs: the coordinates end up outside Ukraine, or suddenly jump an impossible distance.</li>
+      <li><strong>Navigation apps.</strong> Checked with Google Maps, Waze and OsmAnd. In Waze brief jumps are possible during spoofing.</li>
+      <li><strong>The phone.</strong> Android 8 or newer with Google services.</li>
+      <li><strong>Setup.</strong> A few steps in the phone's settings, once; it takes a few minutes. <a href="../en/setup/">Step-by-step guide with pictures</a>.</li>
+    </ul>
+
+    <h2>How to install</h2>
+    <p class="store"><a href="https://play.google.com/store/apps/details?id=io.github.noteleport.app"><img src="../img/google-play-en.png" width="564" height="168" loading="lazy" alt="Get it on Google Play"></a></p>
+    <p>After installing, go through the <a href="../en/setup/">setup</a>: it takes a few minutes.</p>
+
+    <h2>Who makes it and where to write</h2>
+    <p>The author of the app: <a href="https://www.linkedin.com/in/turskyi/" rel="noopener">LinkedIn profile</a>.</p>
+    <p>The app is new. If something does not work or is unclear, write: <a href="https://github.com/noteleport/noteleport.github.io/issues">github.com/noteleport/noteleport.github.io/issues</a>. It will help make the app better.</p>
+  </section>
+
+  <footer>
+    <p>NoTeleport · <a href="../en/setup/">How to set up</a> · <a href="../en/privacy/">Privacy policy</a></p>
+    <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
+  </footer>
+</main>
+</body>
+</html>

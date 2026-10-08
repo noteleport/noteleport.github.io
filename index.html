@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NoTeleport: щоб навігатор не «переносив» вас під час повітряної тривоги</title>
+  <meta name="description" content="Додаток для Android для жителів України. Під час повітряної тривоги сигнал GPS підмінюють, і навігатор показує вас в іншому місті. NoTeleport помічає підміну й не дає їй збити навігацію.">
+  <meta property="og:title" content="NoTeleport: щоб навігатор не «переносив» вас під час повітряної тривоги">
+  <meta property="og:description" content="Додаток для Android для жителів України. Під час повітряної тривоги сигнал GPS підмінюють, і навігатор показує вас в іншому місті. NoTeleport помічає підміну й не дає їй збити навігацію.">
+  <meta property="og:image" content="https://noteleport.github.io/icon.png">
+  <meta property="og:url" content="https://noteleport.github.io/">
+  <link rel="alternate" hreflang="uk" href="https://noteleport.github.io/">
+  <link rel="alternate" hreflang="en" href="https://noteleport.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://noteleport.github.io/">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css?v=c97f074e">
+</head>
+<body>
+<main>
+  <header>
+    <a class="brand" href="./"><img src="icon.png" alt=""><span>NoTeleport</span></a>
+    <div class="lang">
+      <a href="./" lang="uk" hreflang="uk" aria-current="true"><span class="long">Українська</span><span class="short">Укр</span></a>
+      <a href="en/" lang="en" hreflang="en"><span class="long">English</span><span class="short">Eng</span></a>
+    </div>
+  </header>
+  <nav>
+    <a href="./" aria-current="page">Про додаток</a>
+    <a href="setup/">Як налаштувати</a>
+    <a href="privacy/">Політика конфіденційності</a>
+  </nav>
+
+  <section>
+    <h1>Щоб навігатор не «переносив» вас під час повітряної тривоги</h1>
+    <p class="lead">NoTeleport — додаток для Android для жителів України. Він допомагає навігатору працювати під час повітряних тривог, коли сигнал GPS підмінюють.</p>
+
+    <p class="store"><a href="https://play.google.com/store/apps/details?id=io.github.noteleport.app"><img src="img/google-play-uk.png" width="646" height="192" alt="Завантажити з Google Play"></a></p>
+    <p class="muted">Додаток ще готується до публікації: кнопка запрацює, щойно він з’явиться в Google Play.</p>
+
+    <ul class="promises">
+      <li><strong>Нічого нікуди не надсилає.</strong> У додатка взагалі немає доступу до інтернету.</li>
+      <li><strong>Нічого про вас не збирає.</strong> Місцезнаходження обробляється лише на вашому телефоні.</li>
+      <li><strong>Без реклами й аналітики.</strong> У додатку немає рекламних і сторонніх модулів, які щось про вас дізнаються.</li>
+      <li><strong>Без реєстрації.</strong> Не потрібні ні обліковий запис, ні номер телефону.</li>
+    </ul>
+    <p class="muted">Докладно про це — у <a href="privacy/">політиці конфіденційності</a>.</p>
+
+    <h2>Яку проблему він розв’язує</h2>
+    <p>Під час повітряної тривоги сигнал GPS часто підмінюють. Навігатор раптом показує, що ви в іншому місті чи навіть в іншій країні, за сотні кілометрів від справжнього місця. Маршрут зникає, і користуватися навігатором неможливо, доки підміна не закінчиться.</p>
+
+    <h2>Що робить NoTeleport</h2>
+    <ol>
+      <li>Перевіряє сигнал GPS на телефоні.</li>
+      <li>Щойно помічає підміну, вимикає GPS — одразу для всіх додатків.</li>
+      <li>Телефон далі визначає, де ви, за Wi-Fi та мобільними мережами. Це менш точно, ніж GPS, зате навігатор показує вас там, де ви справді є.</li>
+      <li>Коли підміна закінчується, NoTeleport сам вмикає GPS.</li>
+    </ol>
+    <p>Поки підміни немає, додаток нічого на телефоні не змінює, тож його можна тримати ввімкненим постійно.</p>
+
+    <div class="shots">
+      <figure>
+        <img src="img/uk/hero-ok.jpg" width="540" height="690" loading="lazy" alt="Екран NoTeleport: «Підміни GPS немає. Сигнал справжній.»">
+        <figcaption>Зазвичай: підміни немає, додаток лише перевіряє сигнал.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/uk/hero-spoofing.jpg" width="540" height="690" loading="lazy" alt="Екран NoTeleport: «GPS підмінюють. GPS вимкнено. Місцезнаходження приблизне.»">
+        <figcaption>Під час підміни: GPS вимкнено, місцезнаходження приблизне.</figcaption>
+      </figure>
+    </div>
+
+    <h2>Що варто знати заздалегідь</h2>
+    <ul>
+      <li><strong>Точності GPS додаток не повертає.</strong> Поки GPS вимкнено, місцезнаходження приблизне: у місті зазвичай з точністю до кількох десятків метрів, за містом гірше. Зате вас не «переносить» в інше місто.</li>
+      <li><strong>Перші секунди підміни.</strong> На самому початку підміни навігатор може на кілька секунд показати підроблене місце: стільки потрібно, щоб її розпізнати. Потім він повертається.</li>
+      <li><strong>Розрахований на Україну.</strong> Підміну він розпізнає за двома ознаками: координати опинилися за межами України або раптово «перестрибнули» на неможливу відстань.</li>
+      <li><strong>Навігатори.</strong> Перевірено з Google Картами, Waze та OsmAnd. У Waze під час підміни можливі короткі стрибки.</li>
+      <li><strong>Телефон.</strong> Потрібен Android 8 або новіший із сервісами Google.</li>
+      <li><strong>Налаштування.</strong> Один раз треба пройти кілька кроків у налаштуваннях телефона; це займає кілька хвилин. <a href="setup/">Покрокова інструкція з картинками</a>.</li>
+    </ul>
+
+    <h2>Як встановити</h2>
+    <p class="store"><a href="https://play.google.com/store/apps/details?id=io.github.noteleport.app"><img src="img/google-play-uk.png" width="646" height="192" loading="lazy" alt="Завантажити з Google Play"></a></p>
+    <p>Після встановлення пройдіть <a href="setup/">налаштування</a>: це кілька хвилин.</p>
+
+    <h2>Хто це робить і куди писати</h2>
+    <p>Автор додатка: <a href="https://www.linkedin.com/in/turskyi/" rel="noopener">профіль у LinkedIn</a>.</p>
+    <p>Додаток новий. Якщо щось працює не так або незрозуміло, напишіть: <a href="https://github.com/noteleport/noteleport.github.io/issues">github.com/noteleport/noteleport.github.io/issues</a>. Це допоможе зробити його кращим.</p>
+  </section>
+
+  <footer>
+    <p>NoTeleport · <a href="setup/">Як налаштувати</a> · <a href="privacy/">Політика конфіденційності</a></p>
+    <p>Google Play і логотип Google Play є товарними знаками компанії Google LLC.</p>
+  </footer>
+</main>
+</body>
+</html>

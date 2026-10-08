@@ -1,0 +1,227 @@
+:root {
+  --blue: #0057b7;
+  --yellow: #ffd700;
+  --text: #1b1c1f;
+  --muted: #5a5d66;
+  --line: #dfe2ea;
+  --page: #ffffff;
+  --soft: #f3f5fa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blue: #8ab4ff;
+    --text: #e6e7eb;
+    --muted: #a3a7b3;
+    --line: #33363f;
+    --page: #15161a;
+    --soft: #1e2026;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.brand img {
+  width: 56px;
+  height: 56px;
+  border-radius: 13px;
+}
+
+/* The language of the page: each page has its twin in the other one. Small and plain, so
+   that it is not taken for a part of the menu. */
+.lang {
+  display: flex;
+  flex: none;
+  font-size: 0.8rem;
+}
+
+.lang a {
+  padding: 0.25rem 0;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.lang a + a {
+  margin-left: 0.55rem;
+  padding-left: 0.55rem;
+  border-left: 1px solid var(--line);
+}
+
+.lang a[aria-current] { color: var(--text); font-weight: 600; }
+.lang a:not([aria-current]):hover { text-decoration: underline; }
+.lang .short { display: none; }
+
+@media (max-width: 30rem) {
+  .lang .long { display: none; }
+  .lang .short { display: inline; }
+}
+
+/* The menu: a row of rounded buttons that wraps on a phone; the page one is on is filled. */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 2.25rem;
+}
+
+nav a {
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--text);
+  font-size: 0.95rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+nav a:hover { border-color: var(--blue); color: var(--blue); }
+
+nav a[aria-current="page"] {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: var(--page);
+}
+
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 0.6rem; }
+h2 { font-size: 1.25rem; line-height: 1.3; margin: 2.25rem 0 0.4rem; }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 0.25rem; }
+p { margin: 0.6rem 0; }
+ol, ul { margin: 0.6rem 0; padding-left: 1.4rem; }
+li { margin: 0.35rem 0; }
+
+/* Addresses are long words; let them break rather than run off a phone's screen. */
+a { color: var(--blue); overflow-wrap: anywhere; }
+
+.lead { font-size: 1.15rem; }
+.muted { color: var(--muted); font-size: 0.95rem; }
+
+.note {
+  margin: 1.25rem 0;
+  padding: 0.75rem 1rem;
+  background: var(--soft);
+  border-left: 4px solid var(--yellow);
+  border-radius: 6px;
+}
+
+/* The way to the app in the store: Google's own badge, as Google draws it. */
+.store { margin: 1.25rem 0 0.25rem; }
+.store img { display: block; width: auto; height: 60px; }
+
+/* What the app does not do with the user's data: said first, each line with a tick. */
+.promises {
+  margin: 1.25rem 0 0.5rem;
+  padding: 0.9rem 1rem 0.9rem 1rem;
+  list-style: none;
+  background: var(--soft);
+  border-radius: 10px;
+}
+
+.promises li {
+  position: relative;
+  margin: 0.45rem 0;
+  padding-left: 1.75rem;
+}
+
+.promises li::before {
+  content: "✓";
+  position: absolute;
+  left: 0.15rem;
+  color: #1e8e3e;
+  font-weight: 700;
+}
+
+/* Pictures of the phone's screen: side by side where there is room, never wider than a phone. */
+.shots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.25rem;
+  margin: 1rem 0 1.5rem;
+}
+
+figure { margin: 0; flex: 0 1 270px; }
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+figcaption {
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* A step of the setup: its number stands out, so that the place is easy to find again. */
+.step {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.step h2 { margin-top: 0; }
+
+.step h2 span {
+  display: inline-block;
+  min-width: 1.9rem;
+  margin-right: 0.5rem;
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  background: var(--blue);
+  color: var(--page);
+  font-size: 1rem;
+  line-height: 1.9rem;
+  text-align: center;
+  vertical-align: 0.1em;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 3rem 0 2rem;
+}
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+footer p { margin: 0.3rem 0; }

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to set up NoTeleport</title>
+  <meta name="description" content="A step-by-step guide with pictures: how to set up NoTeleport on a new phone.">
+  <meta property="og:title" content="How to set up NoTeleport">
+  <meta property="og:description" content="A step-by-step guide with pictures: how to set up NoTeleport on a new phone.">
+  <meta property="og:image" content="https://noteleport.github.io/icon.png">
+  <meta property="og:url" content="https://noteleport.github.io/en/setup/">
+  <link rel="alternate" hreflang="uk" href="https://noteleport.github.io/setup/">
+  <link rel="alternate" hreflang="en" href="https://noteleport.github.io/en/setup/">
+  <link rel="alternate" hreflang="x-default" href="https://noteleport.github.io/setup/">
+  <link rel="icon" href="../../icon.png">
+  <link rel="stylesheet" href="../../style.css?v=c97f074e">
+</head>
+<body>
+<main>
+  <header>
+    <a class="brand" href="../../en/"><img src="../../icon.png" alt=""><span>NoTeleport</span></a>
+    <div class="lang">
+      <a href="../../setup/" lang="uk" hreflang="uk"><span class="long">Українська</span><span class="short">Укр</span></a>
+      <a href="../../en/setup/" lang="en" hreflang="en" aria-current="true"><span class="long">English</span><span class="short">Eng</span></a>
+    </div>
+  </header>
+  <nav>
+    <a href="../../en/">About the app</a>
+    <a href="../../en/setup/" aria-current="page">How to set up</a>
+    <a href="../../en/privacy/">Privacy policy</a>
+  </nav>
+
+  <h1>How to set up NoTeleport</h1>
+  <p class="lead">The setup is done once and takes a few minutes. The app leads you through the steps itself and marks in green what is already done. Here is the same, with pictures.</p>
+  <p class="note">The pictures are from plain Android 14. On Samsung, Xiaomi and other phones the settings screens look different, and entries may be named a little differently. The steps are the same.</p>
+
+  <section class="step">
+    <h2><span>1</span>Open the app</h2>
+    <p>Install NoTeleport and open it. On the first screen choose the language and tap “Continue”.</p>
+    <div class="shots">
+      <figure>
+        <img src="../../img/en/01-welcome.jpg" width="540" height="1140" loading="lazy" alt="The first screen of NoTeleport, with the choice of language and the “Continue” button">
+      </figure>
+      <figure>
+        <img src="../../img/en/02-setup.jpg" width="540" height="1140" loading="lazy" alt="The list of “Required steps” in NoTeleport">
+        <figcaption>A list of required steps opens. Do them in order: a finished step gets a green tick.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2><span>2</span>Location access</h2>
+    <p>In the step “Location access” tap “Allow”. In the window that appears, leave “Precise” selected and tap “While using the app”.</p>
+    <p class="muted">Why: to check the GPS signal and notice when it is spoofed. The location is processed on the phone and is not sent anywhere.</p>
+    <div class="shots">
+      <figure>
+        <img src="../../img/en/03-location.jpg" width="540" height="1140" loading="lazy" alt="The Android window: “Allow NoTeleport to access this device’s location?”">
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2><span>3</span>Location from Wi-Fi and mobile networks</h2>
+    <p>Usually this step is already green and there is nothing to do.</p>
+    <p>If it is not, tap “Open” and turn on Google Location Accuracy in the location settings.</p>
+    <p class="muted">Why: this is how the phone works out where you are while GPS is off.</p>
+  </section>
+
+  <section class="step">
+    <h2><span>4</span>Developer options</h2>
+    <p>Android lets only the app chosen in “Developer options” switch GPS off, so those have to be unlocked first. It is a standard feature of Android: by itself it changes nothing on the phone.</p>
+    <ol>
+      <li>In the step “Developer options” tap “Open”. The “About phone” screen opens.</li>
+      <li>Find “Build number” at the very bottom and tap it seven times in a row. On Samsung the way is a little longer: “Software information”, and “Build number” there.</li>
+      <li>If the phone asks for your PIN or pattern, enter it. “You are now a developer!” appears.</li>
+      <li>Go back to NoTeleport with the Back button.</li>
+    </ol>
+    <div class="shots">
+      <figure>
+        <img src="../../img/en/04-build-number.jpg" width="540" height="420" loading="lazy" alt="The bottom of the “About phone” screen: “Build number” and the message “You are now a developer!”">
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2><span>5</span>Permission to switch GPS off</h2>
+    <ol>
+      <li>In the step “Permission to switch GPS off” tap “Open”. “Developer options” open.</li>
+      <li>Scroll down to the “Location” section. The list is long; this section is near its end.</li>
+      <li>Tap “Select mock location app” and choose NoTeleport.</li>
+      <li>Go back to NoTeleport.</li>
+    </ol>
+    <p class="muted">The selection itself changes nothing: it only gives NoTeleport the right to switch GPS off while it is being spoofed.</p>
+    <div class="shots">
+      <figure>
+        <img src="../../img/en/05-dev-options.jpg" width="540" height="1140" loading="lazy" alt="“Developer options”, the “Location” section, the entry “Select mock location app”">
+      </figure>
+      <figure>
+        <img src="../../img/en/06-mock-app.jpg" width="540" height="380" loading="lazy" alt="The “Select application” list with NoTeleport in it">
+        <figcaption>Choose NoTeleport in the list.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2><span>6</span>Notifications</h2>
+    <p>In the step “Notifications” tap “Allow”, and then “Allow” again in the Android window.</p>
+    <p class="muted">Why: the notification shows whether protection is on and whether GPS is being spoofed, and it has the button that turns protection off.</p>
+    <div class="shots">
+      <figure>
+        <img src="../../img/en/07-notifications.jpg" width="540" height="1140" loading="lazy" alt="The Android window: “Allow NoTeleport to send you notifications?”">
+      </figure>
+      <figure>
+        <img src="../../img/en/08-setup-done.jpg" width="540" height="1140" loading="lazy" alt="All required steps have green ticks">
+        <figcaption>When all required steps are green, the “Done” button appears at the bottom of the list. Tap it.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2><span>7</span>Turn protection on</h2>
+    <p>On the home screen choose “Protection from GPS spoofing”. There is nothing else to do: the app can be left in the background.</p>
+    <div class="shots">
+      <figure>
+        <img src="../../img/en/09-home-off.jpg" width="540" height="1140" loading="lazy" alt="The home screen of NoTeleport: “Protection is off”">
+        <figcaption>Right after setup, protection is still off.</figcaption>
+      </figure>
+      <figure>
+        <img src="../../img/en/10-home-on.jpg" width="540" height="1140" loading="lazy" alt="The home screen of NoTeleport: “No GPS spoofing”, with “Protection from GPS spoofing” chosen">
+        <figcaption>Protection is on.</figcaption>
+      </figure>
+    </div>
+    <p>While protection is on, there is one NoTeleport notification in the shade:</p>
+    <div class="shots">
+      <figure>
+        <img src="../../img/en/11-notification.jpg" width="540" height="235" loading="lazy" alt="The NoTeleport notification: “Protection is on. No GPS spoofing detected.” with the “Turn protection off” button">
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2>Recommended steps</h2>
+    <p>They are lower in the same list. The app works without them, but more reliably with them.</p>
+    <h3>Running in the background</h3>
+    <p>So that Android does not stop the protection, tap “Turn off optimisation” in the step “Running in the background”. On Xiaomi, Samsung and Huawei also allow autostart in the app settings.</p>
+    <h3>Android Auto</h3>
+    <p>Only those who have Android Auto installed see this step. Android Auto may use the car's own GPS, which NoTeleport cannot switch off. If navigation in the car “teleports” you, remove Android Auto's location permission: it will then take the location from the phone.</p>
+  </section>
+
+  <section class="step">
+    <h2>Check how your navigation app copes</h2>
+    <p>Do not wait for an alert to see what it will be like.</p>
+    <ol>
+      <li>In NoTeleport choose “Switch GPS off now”.</li>
+      <li>Open your navigation app and see how well it shows where you are.</li>
+      <li>To finish, tap “Turn protection on” in the notification, or choose another mode in the app.</li>
+    </ol>
+  </section>
+
+  <section class="step">
+    <h2>What happens during spoofing</h2>
+    <p>NoTeleport switches GPS off by itself, and the status changes to “GPS is being spoofed”. There is nothing to do. When the spoofing ends, GPS comes back by itself; that may happen a few minutes later.</p>
+    <div class="shots">
+      <figure>
+        <img src="../../img/en/12-spoofing.jpg" width="540" height="1140" loading="lazy" alt="The home screen of NoTeleport: “GPS is being spoofed. GPS is off. Location is approximate.”">
+      </figure>
+      <figure>
+        <img src="../../img/en/13-notification-spoofing.jpg" width="540" height="260" loading="lazy" alt="The NoTeleport notification: “GPS is being spoofed. GPS is off until the spoofing ends. Location is approximate.”">
+        <figcaption>If your navigation app does not work without GPS, tap “Turn protection off”: GPS comes back at once, but with the fake signal.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2>If something is wrong</h2>
+    <ul>
+      <li><strong>The notification “Protection has stopped”.</strong> Android closed the app. Open NoTeleport and protection turns on again. To make this rarer, do the recommended step “Running in the background”.</li>
+      <li><strong>The notification “Protection is not working”.</strong> NoTeleport is no longer the app chosen in Developer options. Repeat step 5.</li>
+      <li><strong>Anything else.</strong> Write: <a href="https://github.com/noteleport/noteleport.github.io/issues">github.com/noteleport/noteleport.github.io/issues</a>.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>NoTeleport · <a href="../../en/">About the app</a> · <a href="../../en/privacy/">Privacy policy</a></p>
+    <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
+  </footer>
+</main>
+</body>
+</html>

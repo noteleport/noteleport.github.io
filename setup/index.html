@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Як налаштувати NoTeleport</title>
+  <meta name="description" content="Покрокова інструкція з картинками: як налаштувати NoTeleport на новому телефоні.">
+  <meta property="og:title" content="Як налаштувати NoTeleport">
+  <meta property="og:description" content="Покрокова інструкція з картинками: як налаштувати NoTeleport на новому телефоні.">
+  <meta property="og:image" content="https://noteleport.github.io/icon.png">
+  <meta property="og:url" content="https://noteleport.github.io/setup/">
+  <link rel="alternate" hreflang="uk" href="https://noteleport.github.io/setup/">
+  <link rel="alternate" hreflang="en" href="https://noteleport.github.io/en/setup/">
+  <link rel="alternate" hreflang="x-default" href="https://noteleport.github.io/setup/">
+  <link rel="icon" href="../icon.png">
+  <link rel="stylesheet" href="../style.css?v=c97f074e">
+</head>
+<body>
+<main>
+  <header>
+    <a class="brand" href="../"><img src="../icon.png" alt=""><span>NoTeleport</span></a>
+    <div class="lang">
+      <a href="../setup/" lang="uk" hreflang="uk" aria-current="true"><span class="long">Українська</span><span class="short">Укр</span></a>
+      <a href="../en/setup/" lang="en" hreflang="en"><span class="long">English</span><span class="short">Eng</span></a>
+    </div>
+  </header>
+  <nav>
+    <a href="../">Про додаток</a>
+    <a href="../setup/" aria-current="page">Як налаштувати</a>
+    <a href="../privacy/">Політика конфіденційності</a>
+  </nav>
+
+  <h1>Як налаштувати NoTeleport</h1>
+  <p class="lead">Налаштування одноразове й займає кілька хвилин. Додаток сам веде вас кроками й позначає зеленим те, що вже зроблено. Тут те саме, але з картинками.</p>
+  <p class="note">Знімки зроблено на «чистому» Android 14. На Samsung, Xiaomi та інших телефонах екрани налаштувань виглядають інакше, а пункти можуть називатися трохи по-іншому. Кроки ті самі.</p>
+
+  <section class="step">
+    <h2><span>1</span>Відкрийте додаток</h2>
+    <p>Встановіть NoTeleport і відкрийте його. На першому екрані виберіть мову й натисніть «Далі».</p>
+    <div class="shots">
+      <figure>
+        <img src="../img/uk/01-welcome.jpg" width="540" height="1140" loading="lazy" alt="Перший екран NoTeleport із вибором мови та кнопкою «Далі»">
+      </figure>
+      <figure>
+        <img src="../img/uk/02-setup.jpg" width="540" height="1140" loading="lazy" alt="Список «Обов’язкові кроки» в NoTeleport">
+        <figcaption>Відкриється список обов’язкових кроків. Виконуйте їх по черзі: зроблений крок позначається зеленою галочкою.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2><span>2</span>Доступ до місцезнаходження</h2>
+    <p>У кроці «Доступ до місцезнаходження» натисніть «Дозволити». У вікні, що з’явиться, залиште «Точне» й натисніть «Коли додаток використовується».</p>
+    <p class="muted">Навіщо: щоб перевіряти сигнал GPS і помічати його підміну. Місцезнаходження обробляється на телефоні й нікуди не надсилається.</p>
+    <div class="shots">
+      <figure>
+        <img src="../img/uk/03-location.jpg" width="540" height="1140" loading="lazy" alt="Вікно Android: «Дозволити додатку NoTeleport доступ до місцезнаходження пристрою?»">
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2><span>3</span>Місцезнаходження за Wi-Fi та мобільними мережами</h2>
+    <p>Зазвичай цей крок уже позначено зеленим, і робити нічого не треба.</p>
+    <p>Якщо ні, натисніть «Відкрити» й у налаштуваннях місцезнаходження ввімкніть точність визначення місцезнаходження від Google (Google Location Accuracy).</p>
+    <p class="muted">Навіщо: саме так телефон визначає, де ви, поки GPS вимкнено.</p>
+  </section>
+
+  <section class="step">
+    <h2><span>4</span>Параметри розробника</h2>
+    <p>Android дозволяє вимикати GPS лише тому додатку, який вибрано в «Параметрах розробника», тож спершу їх треба відкрити. Це штатна можливість Android: сама собою вона нічого на телефоні не змінює.</p>
+    <ol>
+      <li>У кроці «Параметри розробника» натисніть «Відкрити». Відкриється екран «Про телефон».</li>
+      <li>Знайдіть у самому низу «Номер складання» й натисніть на нього сім разів поспіль. На Samsung шлях трохи довший: «Відомості про ПЗ», а там «Номер збірки».</li>
+      <li>Якщо телефон попросить PIN-код або графічний ключ, введіть його. З’явиться напис «Тепер ви – розробник!».</li>
+      <li>Поверніться в NoTeleport кнопкою «Назад».</li>
+    </ol>
+    <div class="shots">
+      <figure>
+        <img src="../img/uk/04-build-number.jpg" width="540" height="420" loading="lazy" alt="Низ екрана «Про телефон»: пункт «Номер складання» і напис «Тепер ви – розробник!»">
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2><span>5</span>Дозвіл вимикати GPS</h2>
+    <ol>
+      <li>У кроці «Дозвіл вимикати GPS» натисніть «Відкрити». Відкриються «Параметри розробника».</li>
+      <li>Прогорніть униз до розділу «Місцезнаходження». Список довгий, цей розділ ближче до кінця.</li>
+      <li>Натисніть «Вибрати додаток для фіктивних місцезнаходжень» і виберіть NoTeleport.</li>
+      <li>Поверніться в NoTeleport.</li>
+    </ol>
+    <p class="muted">Сам вибір нічого не змінює: він лише дає NoTeleport право вимикати GPS, коли його підмінюють.</p>
+    <div class="shots">
+      <figure>
+        <img src="../img/uk/05-dev-options.jpg" width="540" height="1140" loading="lazy" alt="«Параметри розробника», розділ «Місцезнаходження», пункт «Вибрати додаток для фіктивних місцезнаходжень»">
+      </figure>
+      <figure>
+        <img src="../img/uk/06-mock-app.jpg" width="540" height="380" loading="lazy" alt="Список «Вибір додатка» з пунктом NoTeleport">
+        <figcaption>У списку виберіть NoTeleport.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2><span>6</span>Сповіщення</h2>
+    <p>У кроці «Сповіщення» натисніть «Дозволити», а потім ще раз «Дозволити» у вікні Android.</p>
+    <p class="muted">Навіщо: зі сповіщення видно, чи працює захист і чи є підміна, і в ньому кнопка, якою захист можна вимкнути.</p>
+    <div class="shots">
+      <figure>
+        <img src="../img/uk/07-notifications.jpg" width="540" height="1140" loading="lazy" alt="Вікно Android: «Дозволити додатку NoTeleport надсилати вам сповіщення?»">
+      </figure>
+      <figure>
+        <img src="../img/uk/08-setup-done.jpg" width="540" height="1140" loading="lazy" alt="Усі обов’язкові кроки позначено зеленими галочками">
+        <figcaption>Коли всі обов’язкові кроки зелені, унизу списку з’являється кнопка «Готово». Натисніть її.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2><span>7</span>Увімкніть захист</h2>
+    <p>На головному екрані виберіть «Захист від підміни GPS». Більше нічого робити не треба: додаток можна згорнути.</p>
+    <div class="shots">
+      <figure>
+        <img src="../img/uk/09-home-off.jpg" width="540" height="1140" loading="lazy" alt="Головний екран NoTeleport: «Захист вимкнено»">
+        <figcaption>Одразу після налаштування захист ще вимкнено.</figcaption>
+      </figure>
+      <figure>
+        <img src="../img/uk/10-home-on.jpg" width="540" height="1140" loading="lazy" alt="Головний екран NoTeleport: «Підміни GPS немає», вибрано «Захист від підміни GPS»">
+        <figcaption>Захист увімкнено.</figcaption>
+      </figure>
+    </div>
+    <p>Поки захист працює, у шторці сповіщень висить одне сповіщення NoTeleport:</p>
+    <div class="shots">
+      <figure>
+        <img src="../img/uk/11-notification.jpg" width="540" height="235" loading="lazy" alt="Сповіщення NoTeleport: «Захист працює. Підміни GPS не помічено.» з кнопкою «Вимкнути захист»">
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2>Рекомендовані кроки</h2>
+    <p>Вони в тому самому списку нижче. Без них додаток працює, але з ними надійніше.</p>
+    <h3>Робота у фоні</h3>
+    <p>Щоб Android не зупиняв захист, у кроці «Робота у фоні» натисніть «Вимкнути оптимізацію». На Xiaomi, Samsung і Huawei також дозвольте автозапуск у налаштуваннях додатка.</p>
+    <h3>Android Auto</h3>
+    <p>Цей крок є лише в тих, у кого встановлено Android Auto. Android Auto може брати GPS автомобіля, а його NoTeleport вимкнути не може. Якщо в авто навігатор «переносить» вас, заберіть в Android Auto дозвіл на доступ до місцезнаходження: тоді він братиме місцезнаходження з телефона.</p>
+  </section>
+
+  <section class="step">
+    <h2>Перевірте, як працює ваш навігатор</h2>
+    <p>Не чекайте тривоги, щоб побачити, як це буде.</p>
+    <ol>
+      <li>У NoTeleport виберіть «Вимкнути GPS зараз».</li>
+      <li>Відкрийте навігатор і подивіться, наскільки правильно він показує, де ви.</li>
+      <li>Щоб закінчити, натисніть «Увімкнути захист» у сповіщенні або виберіть інший режим у додатку.</li>
+    </ol>
+  </section>
+
+  <section class="step">
+    <h2>Що буде під час підміни</h2>
+    <p>NoTeleport вимкне GPS сам, а стан зміниться на «GPS підмінюють». Робити нічого не треба. Коли підміна закінчиться, GPS увімкнеться сам; це може статися на кілька хвилин пізніше.</p>
+    <div class="shots">
+      <figure>
+        <img src="../img/uk/12-spoofing.jpg" width="540" height="1140" loading="lazy" alt="Головний екран NoTeleport: «GPS підмінюють. GPS вимкнено. Місцезнаходження приблизне.»">
+      </figure>
+      <figure>
+        <img src="../img/uk/13-notification-spoofing.jpg" width="540" height="260" loading="lazy" alt="Сповіщення NoTeleport: «GPS підмінюють. GPS вимкнено до кінця підміни. Місцезнаходження приблизне.»">
+        <figcaption>Якщо навігатор без GPS не працює, натисніть «Вимкнути захист»: GPS повернеться одразу, але з підробленим сигналом.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="step">
+    <h2>Якщо щось не так</h2>
+    <ul>
+      <li><strong>Сповіщення «Захист зупинено».</strong> Android закрив додаток. Відкрийте NoTeleport, і захист увімкнеться знову. Щоб таке траплялося рідше, виконайте рекомендований крок «Робота у фоні».</li>
+      <li><strong>Сповіщення «Захист не працює».</strong> NoTeleport більше не вибрано в параметрах розробника. Повторіть крок 5.</li>
+      <li><strong>Інше.</strong> Напишіть: <a href="https://github.com/noteleport/noteleport.github.io/issues">github.com/noteleport/noteleport.github.io/issues</a>.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>NoTeleport · <a href="../">Про додаток</a> · <a href="../privacy/">Політика конфіденційності</a></p>
+    <p>Google Play і логотип Google Play є товарними знаками компанії Google LLC.</p>
+  </footer>
+</main>
+</body>
+</html>
